@@ -2,7 +2,16 @@ html {
     background: rgb(38, 38, 38);
 }
 
+hr {
+    border-top: 1px;
+    border-color: rgb(136, 136, 136);
+    width: 100%
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: "Fjalla One";
     cursor: url('/images/flower.svg'), default;
     min-height: 100vh;
@@ -17,19 +26,41 @@ body {
             rgba(0, 0, 0, 1) 100%);
 }
 
+.hero {
+    text-align: center;
+    width: 100%;
+    max-width: 90%;
+}
+
+.section-content {
+    width: 100%;
+    max-width: 1200px;
+}
+
 #logo {
-    height: 50px;
+    min-height: 50px;
+    height: 100px;
     margin-top: 80px;
     justify-self: center;
 }
 
-h1 {
-    font-size: 26px;
+.hero-headline {
+    text-decoration: underline;
+    text-decoration-color: #424AF9;
+    font-size: xx-large;
+}
+
+.hero-subheadline {
+    font-size: small;
 }
 
 .align-right {
     text-align: right;
     justify-items: end;
+}
+
+.subtext {
+    font-family: 'Arimo';
 }
 
 .text {
@@ -38,13 +69,13 @@ h1 {
 
 .glass {
     margin: 5px;
-    width: 100%;
     display: block;
     min-height: 100px;
     padding: 10px 25px 10px 25px;
     border-radius: 5px;
     border-width: 10px;
-    border-color: white;
+    color: rgb(75, 75, 75);
+    border-color: rgb(136, 136, 136);
     backdrop-filter: blur(16px) saturate(180%);
     background: linear-gradient(263deg,
             rgba(255, 255, 255, 0.5) 0%,
@@ -56,9 +87,8 @@ h1 {
 }
 
 .horizontal {
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
@@ -72,6 +102,16 @@ h1 {
     justify-content: flex-end;
     padding: 15px;
     min-height: 200px;
+    filter: grayscale(1);
+    border: 3px solid rgb(116, 116, 116);
+    font-size: x-large;
+    color: rgb(136, 136, 136);
+}
+
+.subtext {
+    font-size: small;
+    font-family: 'Arimo';
+    margin-left: 20px;
 }
 
 .glass:hover {
@@ -81,6 +121,8 @@ h1 {
 nav {
     padding: 10px;
     text-align: center;
+    width: 100%;
+    font-size: medium;
 }
 
 nav ul {
@@ -132,4 +174,14 @@ button {
     border: 1px solid grey;
     border-radius: 5px;
     color: rgb(221, 221, 221);
+}
+
+.heading-glass {
+    text-transform: uppercase;
+    color: #2f315b;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-size: xx-large;
 }

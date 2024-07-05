@@ -5,27 +5,38 @@
     <link rel="stylesheet" href="src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+Duployan&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Arimo&family=Noto+Sans+Duployan&display=swap"
         rel="stylesheet">
     <!-- <link id="projects-data" href="projects.md" href="projects.md"> -->
 </head>
 
 <body>
-    <div>
-        <div style="text-align:center;">
-            <img src="images/logo.png" alt="logo" id="logo">
-            <h1 style=" text-decoration: underline; text-decoration-color: #424AF9; font-size: xxx-large;">Nett dich
-                kennen zu lernen!</h1>
-            <p style="line-height: 30px;">Mein Name ist <font color="#424AF9">Yvonne Creter</font>, eine <font
-                    color="#424AF9">Frontend
-                    Entwicklerin
-                </font>
-                aus <font color="#424AF9">München</font>.
-                <br />
-                Mach dir gerne einen Eindruck über mich und meine bisherigen Projekte:
-            </p>
-        </div>
+    <!-- CONSTRUCTION INFO -->
+    <p style='text-align: center; margin: 30px 0 20px 0; line-height: 30px; width: 100%;'>
+        <span style="color: red; font-size: x-large;">
+            THIS WEBSITE IS
+            UNDER CONSTRUCTION</span>
+        <br />
+        <span style="color: white; text-transform: uppercase;">please come back in a few days</span>
+    </p>
+    <hr />
+
+    <!-- HERO AREA -->
+    <div class="hero">
+        <img src="images/logo.png" alt="logo" id="logo">
+        <h1 class='hero-headline'>Nett dich
+            kennen zu lernen!</h1>
+        <p class="hero-subheadline">Mein Name ist <font color="#424AF9">Yvonne Creter</font>, eine <font
+                color="#424AF9">Frontend
+                Entwicklerin
+            </font>
+            aus <font color="#424AF9">München</font>.
+            <br />
+            Mach dir gerne einen Eindruck über mich und meine bisherigen Projekte:
+        </p>
     </div>
+
+    <!-- NAVIGATION -->
     <nav style="margin: 120px 0 8px 0;">
         <ul>
             <li><a href="#start">Start</a></li>
@@ -37,48 +48,56 @@
         </ul>
     </nav>
     <hr style="border-top: 1px; border-color: rgb(136, 136, 136);" />
-    <div style="max-width: 1200px; align-items: center; justify-content: space-between;">
+
+    <!-- CONTENT -->
+    <div class="section-content">
         <div class='glass align-right' id="start">
-            <h1 style="font-size: xx-large;">Start</h1>
-            <p class='text'>
-                ??
-                <br />
-                ??
-            <p>
+            <h1 class='heading-glass' style="font-size: xx-large;">Start</h1>
         </div>
+
+        <!-- PROJEKTE -->
         <div class='glass' id="projekte">
-            <h2>Projekte</h2>
+            <h2 class='heading-glass'>Projekte</h2>
             <div class='horizontal'>
                 <div class='container trigger' id='trigger' style="background-image: url('images/image.jpg');">
-                    ONEUP DISCORD BOT <br />
-                    Vibe pushers straight into your inbox.
+                    PROJECTNAME <br />
+                    <span class="subtext">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </span>
                 </div>
-                <a href="https://www.daily-uplift.com/" style="cursor: url('images/flower-active.svg'), default;">
-                    <div class='container' style="background-image: url('images/image.jpg');">
-                        FOLLOWERS PRO DISCORD BOT <br />
-                        Creditbased service provider using API access.
-                    </div>
-                </a>
+                <div class='container trigger' style="background-image: url('images/image.jpg');">
+                    PROJECTNAMEE<br />
+                    <span class="subtext">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </span>
+                </div>
+
             </div>
         </div>
         <div class='glass align-right' id="faehigkeiten">
-            <h2>Fähigkeiten</h2>
+            <h2 class='heading-glass'>Fähigkeiten</h2>
         </div>
         <div class='glass align-right' id="ausbildung">
-            <h2>Ausbildung</h2>
+            <h2 class='heading-glass'>Ausbildung</h2>
         </div>
         <div class='glass align-right' id="erfahrung">
-            <h2>Erfahrung</h2>
+            <h2 class='heading-glass'>Erfahrung</h2>
         </div>
         <div class='glass' id="kontakt">
-            <h2>Let's talk!</h2>
+            <h2 class='heading-glass'>Let's talk!</h2>
+        </div>
+        <div id="popup" class="modal hidden">
+            <div id="popup-content">
+                <a style="position: absolute; right: 25px;" id="close">
+                    <span class="material-icons">&#x2716;</span>
+
+                </a>
+            </div>
         </div>
     </div>
-    <div id="popup" class="modal hidden">
-        My model content
-        <button id="close">Close</button>
-    </div>
-    <script type="text/javascript" src="src/index.js"></script>
+    <script type=" text/javascript" src="src/index.js"></script>
 </body>
 <footer>
 
