@@ -2,52 +2,83 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+Duployan&display=swap"
         rel="stylesheet">
-    <script type="text/javascript" src="index.js"></script>
     <!-- <link id="projects-data" href="projects.md" href="projects.md"> -->
 </head>
 
 <body>
-    <div class='glass align-right'>
-        <h1>Nice to meet you!</h1>
-        <p class='text'>
-            My name is Yvonne Creter, I'm a frontend developer from Munich, Germany.
-            <br />
-            Feel free to get a sense of what I do before reaching out to me:
-        <p>
-    </div>
     <div>
-        <div class='glass' id="projects">
-            <h2>Projects</h2>
+        <div style="text-align:center;">
+            <img src="images/logo.png" alt="logo" id="logo">
+            <h1 style=" text-decoration: underline; text-decoration-color: #424AF9; font-size: xxx-large;">Nett dich
+                kennen zu lernen!</h1>
+            <p style="line-height: 30px;">Mein Name ist <font color="#424AF9">Yvonne Creter</font>, eine <font
+                    color="#424AF9">Frontend
+                    Entwicklerin
+                </font>
+                aus <font color="#424AF9">München</font>.
+                <br />
+                Mach dir gerne einen Eindruck über mich und meine bisherigen Projekte:
+            </p>
+        </div>
+    </div>
+    <nav style="margin: 120px 0 8px 0;">
+        <ul>
+            <li><a href="#start">Start</a></li>
+            <li><a href="#projekte">Projekte</a></li>
+            <li><a href="#faehigkeiten">Fähigkeiten</a></li>
+            <li><a href="#ausbildung">Ausbildung</a></li>
+            <li><a href="#erfahrung">Erfahrung</a></li>
+            <li><a href="#kontakt">Let's talk!</a></li>
+        </ul>
+    </nav>
+    <hr style="border-top: 1px; border-color: rgb(136, 136, 136);" />
+    <div style="max-width: 1200px; align-items: center; justify-content: space-between;">
+        <div class='glass align-right' id="start">
+            <h1 style="font-size: xx-large;">Start</h1>
+            <p class='text'>
+                ??
+                <br />
+                ??
+            <p>
+        </div>
+        <div class='glass' id="projekte">
+            <h2>Projekte</h2>
             <div class='horizontal'>
-                <div class='container'>
-                    LIVELY DISCORD BOT <br />
-                    Motivational messages straight into your DMs.
+                <div class='container trigger' id='trigger' style="background-image: url('images/image.jpg');">
+                    ONEUP DISCORD BOT <br />
+                    Vibe pushers straight into your inbox.
                 </div>
-
-                <div class='container'>
-                    LIVELY DISCORD BOT <br />
-                    Motivational messages straight into your DMs.
-                </div>
+                <a href="https://www.daily-uplift.com/" style="cursor: url('images/flower-active.svg'), default;">
+                    <div class='container' style="background-image: url('images/image.jpg');">
+                        FOLLOWERS PRO DISCORD BOT <br />
+                        Creditbased service provider using API access.
+                    </div>
+                </a>
             </div>
         </div>
-        <div class='glass align-right'>
-            <h2>Skills</h2>
+        <div class='glass align-right' id="faehigkeiten">
+            <h2>Fähigkeiten</h2>
         </div>
-        <div class='glass align-right'>
-            <h2>Experience</h2>
+        <div class='glass align-right' id="ausbildung">
+            <h2>Ausbildung</h2>
         </div>
-        <div class='glass align-right'>
-            <h2>Education</h2>
+        <div class='glass align-right' id="erfahrung">
+            <h2>Erfahrung</h2>
         </div>
-        <div class='glass'>
-            <h2>Contact</h2>
+        <div class='glass' id="kontakt">
+            <h2>Let's talk!</h2>
         </div>
     </div>
+    <div id="popup" class="modal hidden">
+        My model content
+        <button id="close">Close</button>
+    </div>
+    <script type="text/javascript" src="src/index.js"></script>
 </body>
 <footer>
 

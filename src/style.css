@@ -1,18 +1,26 @@
 html {
-    background: rgba(64, 64, 64, 1);
+    background: rgb(38, 38, 38);
 }
 
 body {
     font-family: "Fjalla One";
-    cursor: url('flower.svg'), default;
+    cursor: url('/images/flower.svg'), default;
     min-height: 100vh;
     max-width: 100%;
     margin: 5px 0px 0px 0px;
-    color: black;
-    background: linear-gradient(163deg,
-            rgba(64, 64, 64, 1) 0%,
+    color: rgb(136, 136, 136);
+    border-top: 1px solid rgb(136, 136, 136);
+    border-bottom: 1px solid rgb(136, 136, 136);
+    background: linear-gradient(180deg,
+            rgb(38, 38, 38) 0%,
             rgba(19, 19, 19, 1) 50%,
             rgba(0, 0, 0, 1) 100%);
+}
+
+#logo {
+    height: 50px;
+    margin-top: 80px;
+    justify-self: center;
 }
 
 h1 {
@@ -30,6 +38,7 @@ h1 {
 
 .glass {
     margin: 5px;
+    width: 100%;
     display: block;
     min-height: 100px;
     padding: 10px 25px 10px 25px;
@@ -56,15 +65,71 @@ h1 {
 .container {
     display: flex;
     flex-direction: column;
-    background-image: url('image.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 5px;
     text-align: end;
     justify-content: flex-end;
     padding: 15px;
+    min-height: 200px;
 }
 
 .glass:hover {
     opacity: 100%;
+}
+
+nav {
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: rgb(136, 136, 136);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+a:hover {
+    cursor: url('/images/circle.svg'), default;
+}
+
+button {
+    cursor: url('/images/flower-active.svg'), default;
+}
+
+.trigger {
+    cursor: url('/images/flower-active.svg'), default;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    padding: 20px;
+    z-index: 999;
+    backdrop-filter: blur(25px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: rgb(221, 221, 221);
 }
