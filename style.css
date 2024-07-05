@@ -1,0 +1,70 @@
+html {
+    background: rgba(64, 64, 64, 1);
+}
+
+body {
+    font-family: "Fjalla One";
+    cursor: url('flower.svg'), default;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 5px 0px 0px 0px;
+    color: black;
+    background: linear-gradient(163deg,
+            rgba(64, 64, 64, 1) 0%,
+            rgba(19, 19, 19, 1) 50%,
+            rgba(0, 0, 0, 1) 100%);
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.align-right {
+    text-align: right;
+    justify-items: end;
+}
+
+.text {
+    font-size: 14px;
+}
+
+.glass {
+    margin: 5px;
+    display: block;
+    min-height: 100px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    border-width: 10px;
+    border-color: white;
+    backdrop-filter: blur(16px) saturate(180%);
+    background: linear-gradient(263deg,
+            rgba(255, 255, 255, 0.5) 0%,
+            rgba(255, 255, 255, 0.55) 50%,
+            rgba(255, 255, 255, 0.8) 100%);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.4s ease-in;
+    opacity: 50%;
+}
+
+.horizontal {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    text-align: end;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.glass:hover {
+    opacity: 100%;
+}
