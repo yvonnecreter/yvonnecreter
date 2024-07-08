@@ -8,6 +8,14 @@ hr {
     width: 100%;
 }
 
+.impact-font {
+    font-family: "Fjalla One";
+}
+
+.paragraph-font {
+    font-family: "Arimo";
+}
+
 body {
     display: flex;
     flex-direction: column;
