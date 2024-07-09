@@ -3,6 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="./docs/assets/css/style.css">
+    <link rel="stylesheet" href="./docs/assets/css/hr-pacman.css">
+    <link rel="stylesheet" href="./docs/assets/css/blossoms.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Arimo&family=Noto+Sans+Duployan&display=swap"
@@ -10,6 +12,49 @@
 </head>
 
 <body>
+    <div id='flowers'
+        style="position: fixed; z-index: 0; top: 0px; right: 0px; left: 0px; bottom: 0px; width: 100%; height: 100%;">
+    </div>
+    <script src="src/blossoms.js" text="text/javascript"></script>
+    <script>
+        var sakura = new Sakura('flowers', {
+            colors: [
+                {
+                    gradientColorStart: 'rgba(196, 195, 251,0.5)',
+                    gradientColorEnd: 'rgba(121, 121, 203,0.5)',
+                    gradientColorDegree: 120,
+                },
+                {
+                    gradientColorStart: '#C4C3FB',
+                    gradientColorEnd: '#7979CB',
+                    gradientColorDegree: 120,
+                },
+                {
+                    gradientColorStart: '#C4C3FB',
+                    gradientColorEnd: '#7979CB',
+                    gradientColorDegree: 120,
+                },
+                // {
+                //     gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+                //     gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+                //     gradientColorDegree: 120,
+                // },
+                // {
+                //     gradientColorStart: 'rgba(255,189,189)',
+                //     gradientColorEnd: 'rgba(227,170,181)',
+                //     gradientColorDegree: 120,
+                // },
+                // {
+                //     gradientColorStart: 'rgba(212,152,163)',
+                //     gradientColorEnd: 'rgba(242,185,196)',
+                //     gradientColorDegree: 120,
+                // },
+            ],
+            maxSize: 24,
+            minSize: 10,
+            delay: 200,
+        });
+    </script>
     <!-- CONSTRUCTION INFO -->
     <p style='text-align: center; margin: 30px 0 20px 0; line-height: 30px; width: 100%;'>
         <span style="color: red; font-size: x-large;">
@@ -51,55 +96,133 @@
     <!-- CONTENT -->
     <div class="section-content">
         <div class='glass align-right' id="start">
-            <h1 class='heading-glass' style="font-size: xx-large;">Start</h1>
-        </div>
-
-        <!-- PROJEKTE -->
-        <div class='glass' id="projekte">
-            <h2 class='heading-glass'>Projekte</h2>
-            <div class='horizontal'>
-                <div class='container trigger' id='trigger' style="background-image: url('images/image.jpg');">
-                    PROJECTNAME <br />
-                    <span class="subtext">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    </span>
+            <img src="images/profile-multiply.png"
+                style="z-index: 0; position: absolute; right: 0px; top: 0px; bottom:0px; height: 100%; opacity: 30%; background-size: cover;">
+            <h1 class='heading-glass' style="font-size: xx-large;">About Me</h1>
+            <div style="display: flex; flex-direction: row;">
+                <div style="width: 100%; transform: translateY(-25%);">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                        type="module"></script>
+                    <dotlottie-player src="https://lottie.host/e6495b40-2d49-4417-b98f-4947f4fb7fae/SS6SFKZWqA.json"
+                        background="transparent" speed="1" style="width: 100%" loop autoplay></dotlottie-player>
                 </div>
-                <div class='container trigger' style="background-image: url('images/image.jpg');">
-                    PROJECTNAMEE<br />
-                    <span class="subtext">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    </span>
+                <div class='paragraph-font' style="width: 100%; z-index: 2; color: white;">
+                    <ul style="text-align: left;">
+                        <h3>I can't get enough of:</h3>
+                        <span style="font-size: small;">
+                            <li>Good coffee,</li>
+                            <li>enriching design,</li>
+                            <li>and new innovative ideas.</li>
+                            <br />
+                        </span>
+                        <h3>Goals:</h3>
+                        <span style="font-size: small;">
+                            <li>Build more impactful projects,</li>
+                            <li>get into Deep Learning.</li>
+                        </span>
+                    </ul>
                 </div>
-
             </div>
         </div>
+        <br />
+        <!-- PROJEKTE -->
+        <div class='glass' id="projekte">
+            <img src="images/bg-2.png" style="z-index: 0; position: absolute;
+             left: 0px; width: 100%; right: 0px;
+             top: 0px; bottom:0px; height: 100%;
+             opacity: 25%;
+             object-fit: cover;
+             background-size: cover;">
+            <h2 class='heading-glass'>Projekte</h2>
+            <div class='horizontal'>
+
+                <!-- EINZELNE PROJEKTE -->
+                <div class='container trigger' id='trigger' style="background-image: url('images/image.jpg');">
+                    <div class="video-container">
+                        <video class="my-video" width="100%" height="100%" muted>
+                            <source src="videos/video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <span class="subtext">
+                        <span class="project-heading">Name of Project</span><br />
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </span>
+                </div>
+                <div class='container trigger' id='trigger' style="background-image: url('images/image.jpg');">
+
+                    <span class="subtext">
+                        <span class="project-heading">Name of Project</span><br />
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </span>
+                </div>
+                <div class='container trigger' id='trigger' style="background-image: url('images/image.jpg');">
+                    <span class="subtext">
+                        <span class="project-heading">Name of Project</span><br />
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </span>
+                </div>
+                <div class='container trigger' id='trigger' style="background-image: url('images/image.jpg');">
+                    <div class="video-container">
+                        <video class="my-video" width="100%" height="100%" muted>
+                            <source src="videos/video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <span class="subtext">
+                        <span class="project-heading">Name of Project</span><br />
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </span>
+                </div>
+            </div>
+        </div>
+        <br />
         <div class='glass align-right' id="faehigkeiten">
+            <img src="images/bg-3.png" style="z-index: 0; position: absolute;
+                    left: 0px; width: 100%; right: 0px;
+                    top: 0px; bottom:0px; height: 100%;
+                    opacity: 25%;
+                    object-fit: cover;
+                    background-size: cover;">
             <h2 class='heading-glass'>Fähigkeiten</h2>
         </div>
-        <div class='glass align-right' id="ausbildung">
+        <!-- <div class='glass align-right' id="ausbildung">
+            <img src="images/background-1.png"
+                style="position: absolute; left: 0px;  width: 100%; right: 0px; z-index: 0; top: 0px; bottom:0px; height: 100%; opacity: 25%;background-size: cover;">
+
             <h2 class='heading-glass'>Ausbildung</h2>
         </div>
         <div class='glass align-right' id="erfahrung">
+            <img src="images/background-1.png"
+                style="position: absolute; left: 0px;  width: 100%; right: 0px; z-index: 0; top: 0px; bottom:0px; height: 100%; opacity: 25%;background-size: cover;">
+
             <h2 class='heading-glass'>Erfahrung</h2>
-        </div>
+        </div> -->
+        <br />
         <div class='glass' id="kontakt">
+            <img src="images/bg-4.png" style="z-index: 0; position: absolute;
+                    left: 0px; width: 100%; right: 0px;
+                    top: 0px; bottom:0px; height: 100%;
+                    opacity: 25%;
+                    object-fit: cover;
+                    background-size: cover;">
             <h2 class='heading-glass'>Let's talk!</h2>
         </div>
         <div id="popup" class="modal hidden">
+            <a style="position: absolute; right: 25px;" id="close">
+                <span class="material-icons" style="z-index: 5;">&#x2716;</span>
+            </a>
             <div id="popup-content">
-                <a style="position: absolute; right: 25px;" id="close">
-                    <span class="material-icons">&#x2716;</span>
 
-                </a>
             </div>
         </div>
     </div>
-    <p class="impact-font">© 2024 | All Rights Reserved | By Yvonne C.</p>
     <script type="text/javascript" src="src/index.js"></script>
 </body>
 <footer>
+    <p class="impact-font">© 2024 | All Rights Reserved | By Yvonne C.</p>
 </footer>
 
 </html>
