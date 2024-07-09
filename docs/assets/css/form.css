@@ -92,6 +92,7 @@ textarea:hover::focus:-ms-placeholder {
     position: relative;
     width: 500px;
     margin: 50px auto 100px auto;
+
 }
 
 input {
@@ -100,6 +101,7 @@ input {
     width: 470px;
     height: 50px;
     padding: 0px 15px 0px 15px;
+
 
     background: transparent;
     outline: none;
@@ -112,6 +114,9 @@ input {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
+
+
+    cursor: url('/images/circle.svg'), default;
 }
 
 input:hover {
@@ -120,6 +125,7 @@ input:hover {
 }
 
 textarea {
+    cursor: url('/images/circle.svg'), default;
     width: 470px;
     max-width: 470px;
     height: 110px;
@@ -157,7 +163,7 @@ textarea:hover {
     color: #b3aca7;
 
     outline: none;
-    cursor: pointer;
+
 
     border: solid 1px #b3aca7;
     border-top: none;
@@ -165,4 +171,5 @@ textarea:hover {
 
 #submit:hover {
     color: #e2dedb;
+    cursor: url('/images/flower-active.svg'), default;
 }
