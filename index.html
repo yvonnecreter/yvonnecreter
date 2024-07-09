@@ -3,12 +3,13 @@
 
 <head>
     <link rel="stylesheet" href="./docs/assets/css/style.css">
-    <link rel="stylesheet" href="./docs/assets/css/hr-pacman.css">
+    <link rel="stylesheet" href="./docs/assets/css/form.css">
     <link rel="stylesheet" href="./docs/assets/css/blossoms.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Arimo&family=Noto+Sans+Duployan&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -97,28 +98,60 @@
     <div class="section-content">
         <div class='glass align-right' id="start">
             <img src="images/profile-multiply.png"
-                style="z-index: 0; position: absolute; right: 0px; top: 0px; bottom:0px; height: 100%; opacity: 30%; background-size: cover;">
+                style="z-index: 0; position: absolute; right: 0px; top: 0px; bottom:0px; height: 100%; opacity: 30%; background-size: cover;" />
             <h1 class='heading-glass' style="font-size: xx-large;">About Me</h1>
             <div style="display: flex; flex-direction: row;">
-                <div style="width: 100%; transform: translateY(-25%);">
+                <div style="width: 100%; transform: translateY(-25%);  margin: auto; max-width: 300px;">
                     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
                         type="module"></script>
                     <dotlottie-player src="https://lottie.host/e6495b40-2d49-4417-b98f-4947f4fb7fae/SS6SFKZWqA.json"
-                        background="transparent" speed="1" style="width: 100%" loop autoplay></dotlottie-player>
+                        background="transparent" speed="1" style="width: 100%; max-width: 300px;" loop
+                        autoplay></dotlottie-player>
                 </div>
                 <div class='paragraph-font' style="width: 100%; z-index: 2; color: white;">
                     <ul style="text-align: left;">
-                        <h3>I can't get enough of:</h3>
+                        <h3>Headline 1</h3>
                         <span style="font-size: small;">
-                            <li>Good coffee,</li>
-                            <li>enriching design,</li>
-                            <li>and new innovative ideas.</li>
+                            <li>Content 1</li>
+                            <li>Content 1</li>
+                            <li>Content 1</li>
+                            <li>Content 1</li>
                             <br />
                         </span>
-                        <h3>Goals:</h3>
+                        <h3>Headline 2</h3>
                         <span style="font-size: small;">
-                            <li>Build more impactful projects,</li>
-                            <li>get into Deep Learning.</li>
+                            <li>Content 2</li>
+                            <li>Content 2</li>
+                            <li>Content 2</li>
+                            <li>Content 2</li>
+                        </span>
+                    </ul>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                <div style="z-index: 2; color: white;  margin: auto; max-width: 300px;">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                        type="module"></script>
+
+                    <dotlottie-player src="https://lottie.host/a49a6c20-49a2-46ca-a2ca-dd0a4a23ef25/KZUZ9BBqYf.json"
+                        autoplay></dotlottie-player>
+                </div>
+                <div class='paragraph-font' style="width: 100%; z-index: 2; color: white;">
+                    <ul style="text-align: left;">
+                        <h3>Headline 1</h3>
+                        <span style="font-size: small;">
+                            <li>Content 1</li>
+                            <li>Content 1</li>
+                            <li>Content 1</li>
+                            <li>Content 1</li>
+                            <br />
+                        </span>
+                        <h3>Headline 2</h3>
+                        <span style="font-size: small;">
+                            <li>Content 2</li>
+                            <li>Content 2</li>
+                            <li>Content 2</li>
+                            <li>Content 2</li>
                         </span>
                     </ul>
                 </div>
@@ -132,15 +165,24 @@
              top: 0px; bottom:0px; height: 100%;
              opacity: 25%;
              object-fit: cover;
-             background-size: cover;">
+             background-size: cover;" />
             <h2 class='heading-glass'>Projekte</h2>
             <div class='horizontal'>
 
                 <!-- EINZELNE PROJEKTE -->
-                <div class='container trigger' id='trigger' style="background-image: url('images/image.jpg');">
+                <div class='container trigger' id='trigger'
+                    style="background-image: url('images/example-image-1.jpeg');">
+                    <span class="subtext">
+                        <span class="project-heading">Name of Project</span><br />
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </span>
+                </div>
+                <div class='container trigger' id='trigger'
+                    style="background-image: url('images/example-image-2.jpeg');">
                     <div class="video-container">
                         <video class="my-video" width="100%" height="100%" muted>
-                            <source src="videos/video.mp4" type="video/mp4">
+                            <source src="videos/example-video-2.mov" type="video/mp4">
                         </video>
                     </div>
                     <span class="subtext">
@@ -149,25 +191,24 @@
                         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                     </span>
                 </div>
-                <div class='container trigger' id='trigger' style="background-image: url('images/image.jpg');">
-
-                    <span class="subtext">
-                        <span class="project-heading">Name of Project</span><br />
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    </span>
-                </div>
-                <div class='container trigger' id='trigger' style="background-image: url('images/image.jpg');">
-                    <span class="subtext">
-                        <span class="project-heading">Name of Project</span><br />
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    </span>
-                </div>
-                <div class='container trigger' id='trigger' style="background-image: url('images/image.jpg');">
+                <div class='container trigger' id='trigger'
+                    style="background-image: url('images/example-image-3.jpeg');">
                     <div class="video-container">
                         <video class="my-video" width="100%" height="100%" muted>
-                            <source src="videos/video.mp4" type="video/mp4">
+                            <source src="videos/example-video-3.mov" type="video/mp4">
+                        </video>
+                    </div>
+                    <span class="subtext">
+                        <span class="project-heading">Name of Project</span><br />
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </span>
+                </div>
+                <div class='container trigger' id='trigger'
+                    style="background-image: url('images/example-image-4.jpeg');">
+                    <div class="video-container">
+                        <video class="my-video" width="100%" height="100%" muted>
+                            <source src="videos/example-video-4.mov" type="video/mp4">
                         </video>
                     </div>
                     <span class="subtext">
@@ -179,27 +220,21 @@
             </div>
         </div>
         <br />
+
+        <!-- SKILLS -->
         <div class='glass align-right' id="faehigkeiten">
             <img src="images/bg-3.png" style="z-index: 0; position: absolute;
                     left: 0px; width: 100%; right: 0px;
                     top: 0px; bottom:0px; height: 100%;
                     opacity: 25%;
                     object-fit: cover;
-                    background-size: cover;">
+                    background-size: cover;" />
             <h2 class='heading-glass'>Fähigkeiten</h2>
+            <div id="diagram">
+            </div>
+            <br />
         </div>
-        <!-- <div class='glass align-right' id="ausbildung">
-            <img src="images/background-1.png"
-                style="position: absolute; left: 0px;  width: 100%; right: 0px; z-index: 0; top: 0px; bottom:0px; height: 100%; opacity: 25%;background-size: cover;">
 
-            <h2 class='heading-glass'>Ausbildung</h2>
-        </div>
-        <div class='glass align-right' id="erfahrung">
-            <img src="images/background-1.png"
-                style="position: absolute; left: 0px;  width: 100%; right: 0px; z-index: 0; top: 0px; bottom:0px; height: 100%; opacity: 25%;background-size: cover;">
-
-            <h2 class='heading-glass'>Erfahrung</h2>
-        </div> -->
         <br />
         <div class='glass' id="kontakt">
             <img src="images/bg-4.png" style="z-index: 0; position: absolute;
@@ -207,8 +242,16 @@
                     top: 0px; bottom:0px; height: 100%;
                     opacity: 25%;
                     object-fit: cover;
-                    background-size: cover;">
+                    background-size: cover;" />
             <h2 class='heading-glass'>Let's talk!</h2>
+            <form id="form" class="topBefore">
+
+                <input id="name" type="text" placeholder="NAME">
+                <input id="email" type="text" placeholder="E-MAIL">
+                <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                <input id="submit" type="submit" value="GO!">
+
+            </form>
         </div>
         <div id="popup" class="modal hidden">
             <a style="position: absolute; right: 25px;" id="close">
@@ -219,7 +262,10 @@
             </div>
         </div>
     </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <script type="text/javascript" src="src/index.js"></script>
+    <script src="./docs/assets/scripts/diagram.js" text="text/javascript"></script>
 </body>
 <footer>
     <p class="impact-font">© 2024 | All Rights Reserved | By Yvonne C.</p>
